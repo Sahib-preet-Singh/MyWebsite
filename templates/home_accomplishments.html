@@ -1,0 +1,14 @@
+<div class="border-bottom row" style="margin-bottom:16px;padding-bottom:8px;">
+  <div class='col-9'>
+     <h5 style="color:rgb(20,20,20);margin-bottom:4px;">
+       {{course['Course_Name']}}
+     </h5>
+       <b>Completed:</b> {{course['Completed']}}
+     {% if 'Duration' in course%}
+        <div><b>Duration:</b> {{course['Duration']}}</div>
+     {% endif %}
+  </div>
+  <div class="col-3 col align-self-center ">
+  <button type="button" class="btn btn-outline-primary" style='display: block;  margin-left:auto; margin-right:30px' >More Details</button>
+  </div>
+</div>

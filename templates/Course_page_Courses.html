@@ -1,0 +1,18 @@
+<div class="border-bottom row" style="margin-bottom:16px;padding-bottom:8px;">
+  <div class='col-8'>
+     <h3 style="color:rgb(20,20,20);margin-bottom:4px;">
+       {{course['Course_Name']}}
+     </h3>
+       {% if 'Duration' in course%}
+        <b>Duration:</b> {{course['Duration']}}
+        {% endif %}<br>
+    <b>Completed:</b> {{course['Completed']}}<br>
+       <b>Brief Description:</b> {{course['Description']}}
+        
+    
+  </div>
+  <div class="col-4 col align-self-center ">
+    <!--   < img src="static/VMM_Certificate.jpg" > -->
+    <img src="static/VMM_Certificate.jpg" style='height:250px; width:300px; display: block;  margin-left: auto; margin-right:auto'>
+  </div>
+</div>
